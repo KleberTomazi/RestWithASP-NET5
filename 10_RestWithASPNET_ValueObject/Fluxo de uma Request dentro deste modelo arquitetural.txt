@@ -1,0 +1,6 @@
+Explicando fluxo de chamada:
+
+Controller roteia a requisição do client e define o método através da rota, o método invoca o Business e o Business valida as regras de negócio, após serem validadas o Business chama o Repository, que por sua vez acessa a base de dados.
+
+Resumo: 
+Requisição -> Controller (Método dentro do controller) -> Business -> Repository
